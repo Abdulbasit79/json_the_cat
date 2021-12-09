@@ -1,6 +1,7 @@
 const { fetchBreedDescription } = require('../json_the_cat/breedFetcher');
 const { assert } = require('chai');
 
+
 describe('fetchBreedDescription', () => {
 
   it('returns a string description for a valid breed, via callback', (done) => {
@@ -13,7 +14,6 @@ describe('fetchBreedDescription', () => {
       assert.equal(expectedDesc, desc.trim());
 
       done();
-
     });
   });
 

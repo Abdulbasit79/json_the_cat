@@ -16,9 +16,8 @@ describe('fetchBreedDescription', () => {
       done();
 
     });
-
   });
-
+  
   it ('returns an error if an invalid breed is entered', (done) => {
     fetchBreedDescription('NotABreed', (err) => {
       assert.equal(err, 'Breed not found!')

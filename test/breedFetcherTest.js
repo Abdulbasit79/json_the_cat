@@ -9,7 +9,6 @@ describe('fetchBreedDescription', () => {
       assert.equal(err, null);
 
       const expectedDesc = "The Siberians dog like temperament and affection makes the ideal lap cat and will live quite happily indoors. Very agile and powerful, the Siberian cat can easily leap and reach high places, including the tops of refrigerators and even doors.";
-
       // compare returned description
       assert.equal(expectedDesc, desc.trim());
 
@@ -17,7 +16,7 @@ describe('fetchBreedDescription', () => {
 
     });
   });
-  
+
   it ('returns an error if an invalid breed is entered', (done) => {
     fetchBreedDescription('NotABreed', (err) => {
       assert.equal(err, 'Breed not found!')
